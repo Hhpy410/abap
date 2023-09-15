@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_PM_UI5</CLSNAME>
+    <LANGU>3</LANGU>
+    <DESCRIPT>[PM] UI5 Util</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>사원번호</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>해당 프로그램을 사용할 수 있는 권한이 없습니다.</ENTRY>
+     <LENGTH>77</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>물품 관리원</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>테스트 입니다.</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>코스트 센터</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>오더번호</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>사업코드</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>SAP 미술품 번호</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>미술품 대장번호</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>대내 임차기관</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>대외 임차기관</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>작가코드</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>검색어를 입력해주세요!</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>검색어는 두글자 이상 입력되어야 합니다.</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>검색어는 문자와 숫자가 같이 입력되어야 합니다.</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>검색어 &quot;&amp;1&quot; 에 대한 검색결과 총 &amp;2건 입니다.</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>사용 권한이 없는 메뉴입니다.</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>거래처</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>데이터가 없습니다.</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ARTIST_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>작가 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>물품 관리원 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>AUFNR_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>오더 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DEV_UNAME</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>사용자 이름</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EQUNR_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>설비번호 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FINCODE_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>사업코드 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ARTNUM_KEY</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>대장 번호</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PSNUM_KEY</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>시행품의 번호</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GW_DOC_VIEWER</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>gw 조회</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INVNR_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>대장번호 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>KOSTL_C_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>계약부서  F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>KOSTL_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>코스트 센터 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LEASE_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>임차기관 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LIFNR_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>거래처 F4</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PERNR_F4</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>사원번호 F4</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADDR_API</CMPNAME>
+     <SCONAME>ET_JUSO</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>주소 리스트</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADDR_API</CMPNAME>
+     <SCONAME>I_KEY</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>검색 키워드</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ARTIST_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <SCONAME>IV_BUKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>회사 코드</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <SCONAME>IV_KOSTL</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>코스트 센터</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <SCONAME>IV_PUBOFC_FG</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>관직구분</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_MNG_NO_F4</CMPNAME>
+     <SCONAME>IV_UP_PUBOFC_NO</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>상위번호</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AUFNR_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_F4_APP</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CALL_F4_APP</CMPNAME>
+     <SCONAME>IT_PARAM</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>HTTP Framework (iHTTP) Table Name/Value Pairs</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EQUNR_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EQUNR_F4</CMPNAME>
+     <SCONAME>I_KOKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>관리회계 영역</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EQUNR_F4</CMPNAME>
+     <SCONAME>I_WRKART_ST</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>클라이언트</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FINCODE_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FINCODE_F4</CMPNAME>
+     <SCONAME>I_FIKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>재무 관리 영역</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ARTNUM_KEY</CMPNAME>
+     <SCONAME>RV_KEY</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>문자 필드 길이 12</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PSNUM_KEY</CMPNAME>
+     <SCONAME>RV_KEY</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>문자 필드 길이 12</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_USER_INFO</CMPNAME>
+     <SCONAME>ET_PERSON</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>모듈 제공 Function</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GW_DOC_VIEWER</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GW_DOC_VIEWER</CMPNAME>
+     <SCONAME>I_DOCID</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>전자결재문서</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GW_DOC_VIEWER</CMPNAME>
+     <SCONAME>I_USERID</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>사용자 이름</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INVNR_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INVNR_F4</CMPNAME>
+     <SCONAME>I_KOKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>관리회계 영역</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>KOSTL_C_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>KOSTL_C_F4</CMPNAME>
+     <SCONAME>I_KOKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>관리회계 영역</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>KOSTL_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>KOSTL_F4</CMPNAME>
+     <SCONAME>I_KOKRS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>관리회계 영역</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LEASE_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LEASE_F4</CMPNAME>
+     <SCONAME>I_FLAG</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>1:대내 2:대외</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LIFNR_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>PERNR_F4</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEARCH_HELP</CMPNAME>
+     <SCONAME>IO_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>AR_VIEW</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>[U4A] UI Element Super Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>AUTO_WIDTH</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>일반 표시</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>FT_YN</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>일반 표시</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>ROWS</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>4바이트 부호 있는 정수</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>ST_YN</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>일반 표시</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UITABLE_CONFIG</CMPNAME>
+     <SCONAME>TID</SCONAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>TABLE ID</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
